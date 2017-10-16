@@ -21,6 +21,18 @@ RSpec.describe Bank do
       bank.withdraw(500)
       expect(bank.balance).to eq(500)
     end
+
+
+    it "prints a statement showing a deposit" do
+      bank.deposit(1000)
+      expect(bank.statement).to eq ("Deposited: #{1000}")
+    end
+
+    it "stores a deposit in the statement" do
+      bank.deposit(2000)
+      expect(bank.store_deposit(2000)).to eq [2000]
+    end
+
   end
 
 end
