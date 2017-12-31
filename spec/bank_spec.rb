@@ -6,6 +6,7 @@ RSpec.describe Bank do
 
 
   describe "bank" do
+
     it "initializes with a balance of zero" do
       expect(bank.balance).to eq(0)
     end
@@ -30,7 +31,7 @@ RSpec.describe Bank do
 
     it "stores a deposit in the statement" do
       bank.deposit(2000)
-      expect(bank.store_deposit(2000)).to eq [2000]
+      expect(bank.deposits).to eq [2000]
     end
 
   end
