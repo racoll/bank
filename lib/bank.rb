@@ -1,10 +1,11 @@
 class Bank
 
-  attr_reader :deposits
+  attr_reader :deposits, :withdrawals
 
   def initialize
     @balance = 0
     @deposits = []
+    @withdrawals = []
     @statement = []
   end
 
@@ -20,6 +21,7 @@ class Bank
 
   def withdraw(amount)
     @balance -= amount
+    @withdrawals << amount
   end
 
   def statement

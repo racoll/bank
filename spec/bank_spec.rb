@@ -29,11 +29,17 @@ RSpec.describe Bank do
       expect(bank.statement).to eq ("Deposited: #{1000}")
     end
 
-    it "stores a deposit in the statement" do
+    it "stores a deposit in deposits" do
       bank.deposit(2000)
       expect(bank.deposits).to eq [2000]
     end
 
-  end
+    it "stores a withdrawal in withdrawals" do
+      bank.withdraw(1000)
+      expect(bank.withdrawals).to eq [1000]
+    end
 
-end
+
+    end
+
+  end
