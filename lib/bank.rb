@@ -25,7 +25,8 @@ class Bank
   end
 
   def statement
-    "Deposited: #{1000}"
+    @statement << @deposits
+    @statement << @withdrawals
   end
 
 end
