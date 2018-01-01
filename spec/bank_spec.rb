@@ -31,7 +31,7 @@ RSpec.describe Bank do
 
     it "stores a deposit in deposits" do
       bank.deposit(2000)
-      expect(bank.deposits).to eq [2000]
+      expect(bank.deposits).to eq [("Deposited: £#{2000} at #{Time.now}")]
     end
 
     it "stores a withdrawal in withdrawals" do
@@ -47,7 +47,7 @@ RSpec.describe Bank do
 
     it "stores a deposit with a timestamp" do
       bank.deposit(1000)
-      expect(bank.deposit).to eq ("Deposited: £#{1000} at #{Time.now}")
+      expect(bank.deposits).to eq [("Deposited: £#{1000} at #{Time.now}")]
     end
 
 
