@@ -45,6 +45,11 @@ RSpec.describe Bank do
       expect(bank.statement).to eq [5000], [2000]
     end
 
+    it "stores a deposit with a timestamp" do
+      bank.deposit(1000)
+      expect(bank.deposit).to eq ("Deposited: £#{1000} at #{Time.now}")
+    end
+
 
     end
 

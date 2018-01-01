@@ -13,6 +13,7 @@ class Bank
   def deposit(amount)
     @balance += amount
     @deposits << amount
+    return "Deposited: £ #{amount} at #{Time.now}"
   end
 
   def balance
