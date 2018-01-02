@@ -21,7 +21,7 @@ class Bank
 
   def withdraw(amount)
     @balance -= amount
-    @withdrawals << amount
+    @withdrawals << "Withdrew: £#{amount} at #{Time.now}"
   end
 
   # def statement
