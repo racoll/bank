@@ -2,6 +2,7 @@ class Bank
 
   attr_reader :deposits, :withdrawals, :statement, :balance
 
+
   def initialize
     @balance = 0
     @deposits = []
