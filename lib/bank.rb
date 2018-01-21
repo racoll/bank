@@ -1,6 +1,6 @@
 class Bank
 
-  attr_reader :deposits, :withdrawals, :statement
+  attr_reader :deposits, :withdrawals, :statement, :balance
 
   def initialize
     @balance = 0
@@ -15,9 +15,9 @@ class Bank
     @deposits << "Deposited: £#{amount} at #{Time.now}"
   end
 
-  def balance
-    @balance
-  end
+  # def balance
+  #   @balance
+  # end
 
   def withdraw(amount)
     @balance -= amount
