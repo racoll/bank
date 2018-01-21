@@ -29,6 +29,12 @@ I wanted to practice my Ruby skills, specifically those of good separation of co
   - bank.balance
   - bank.withdraw(50)
 
+### To Do
+
+- separate out the deposits and withdrawals storage into an account class.
+- separate out the display deposits and withdrawals into the statement class.
+- add the time stamp functionality to the statement class.
+
 
 ### USER STORIES:
 
