@@ -18,11 +18,11 @@ I wanted to practice my Ruby skills, specifically those of good separation of co
 
 - Open irb in the command line
   - require './lib/bank.rb'
-  - require './lib/statement.rb'
+  - require './lib/account.rb'
 
 - create new instances of:
   - bank = Bank.new
-  - statement = Statement.new
+  - account = Account.new
 
 - join the bank!
   - bank.deposit(100)
