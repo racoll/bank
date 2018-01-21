@@ -1,4 +1,5 @@
 require "account"
+require "bank"
 
 RSpec.describe Account do
 

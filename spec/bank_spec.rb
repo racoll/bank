@@ -1,4 +1,5 @@
 require "bank"
+require "account"
 
 RSpec.describe Bank do
 
@@ -51,7 +52,7 @@ RSpec.describe Bank do
     end
 
     it "organises the statment entries in chrono order" do
-      
+
     end
 
     end

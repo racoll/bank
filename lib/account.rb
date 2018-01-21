@@ -1,7 +1,6 @@
 class Account
 
-  attr_reader :deposits, :withdrawals
-  attr_accessor :deposits, :withdrawals
+  attr_reader :deposits, :withdrawals # so account spec can read
 
   def initialize
     @deposits = []

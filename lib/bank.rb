@@ -1,6 +1,7 @@
 class Bank
 
   attr_reader :deposits, :withdrawals, :statement, :balance
+  attr_accessor :deposits, :withdrawals
 
 
   def initialize
