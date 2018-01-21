@@ -4,10 +4,10 @@ class Bank
 
 
   def initialize
-    @balance = 0
-    @deposits = []
-    @withdrawals = []
-    @statement = @deposits, @withdrawals
+    @balance = 0 # bank responsibility
+    @deposits = [] # account responsibility
+    @withdrawals = [] # account responsibility
+    @statement = @deposits, @withdrawals # statement responsibility
   end
 
 

@@ -10,6 +10,10 @@ RSpec.describe Account do
       expect(account.deposits).to eq []
     end
 
+    it "initializes with empty withdrawals" do
+      expect(account.withdrawals).to eq []
+    end
+
   end
 
 end
