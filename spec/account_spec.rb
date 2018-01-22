@@ -4,6 +4,7 @@ require "bank"
 RSpec.describe Account do
 
   subject(:account) { described_class.new }
+  sibject(:bank) { Bank.new }
 
   describe "account" do
 

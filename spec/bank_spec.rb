@@ -4,6 +4,7 @@ require "account"
 RSpec.describe Bank do
 
   subject(:bank) { described_class.new }
+  subject(:account) { described_class.new }
 
 
   describe "bank" do
@@ -34,6 +35,11 @@ RSpec.describe Bank do
       bank.deposit(2000)
       expect(bank.deposits).to eq [("Deposited: £#{2000} at #{Time.now}")]
     end
+
+    # it "stores a deposit in account deposits" do
+    #   bank.deposit(3000)
+    #   expect(account.deposits).to eq 3000
+    # end
 
     it "stores a withdrawal in withdrawals" do
       bank.withdraw(1000)
